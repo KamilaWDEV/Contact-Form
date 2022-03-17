@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+    <form class="form" method="post" name="form" id="contactForm" action="./send-script.php">
+        <div calss="form-group">
+            <label for="name">Nom*</label>
+            <input 
+            type="text" 
+            name="name" 
+            id="name"
+            >
+            <div class="data-error-text hidden">Veuillez entrer un nome valide</div>
+        </div>
+        <div class="form-group">
+            <label for="name">Prenome*</label>
+            <input 
+            type="text" 
+            name="prenome" 
+            id="prenome"
+            >
+             <div class="data-error-text hidden">Veuillez entrer un prénom valide</div>
+        </div>
+        <div class="form-group">
+            <label for="name">Telephone</label>
+            <input  
+            type="text" 
+            name="telephone" 
+            id="telephone">
+            <div class="data-error-text hidden">Veuillez entrer un telephone valide</div>
+
+        </div>
+        <div class="form-group">
+            <label for="name">Email*</label>
+            <input  
+            type="text" 
+            name="email" 
+             id="Email"
+             >
+            <div class="data-error-text hidden">Veuillez entrer un email valide</div>
+        </div>
+        <div class="form-group">
+            <label for="name">Message*</label>
+            <textarea  type="text" name="message" id="message" placeholder="tapez votre message" ></textarea>
+            <div class="data-error-text hidden">Votre message est requis</div>
+        </div>
+
+
+        <button>envoyer</button>
+
+    </form>
+    <script src="form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+form {
+     padding: 100px;    
+
+}
+
+/* tytuł pola edycyjnego */
+.form label {
+    margin-top: 15px;
+    display: block;
+    font-size: 17px;
+    padding-bottom: 15px;
+
+
+}
+
+/*  input pole edycyjne dla name */
+#name {
+    width: 320px;
+    padding: 10px;
+    font-size: 12px;
+    color: rgb(63, 65, 64);
+    outline: none;
+    background-color: rgb(163, 169, 194);
+    border-radius: 3px;
+    border-color: none
+}
+
+.form input.field-error,
+.form textarea.field-error {
+    border-color: rgb(247, 164, 149);
+   
+    box-shadow: 0 0 0 2px rgba(204, 110, 93, 0.3);
+}
+.data-error-text {
+    color: rgb(247, 164, 149);
+    font-size: 0.8rem;
+    margin-top: 5px;
+ 
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* pole edycujne na prenome */
+#prenome {
+
+    width: 320px;
+    padding: 10px;
+    font-size: 12px;
+    color: rgb(63, 65, 64);
+    outline: none;
+    background-color: rgb(163, 169, 194);
+    border-radius: 3px;
+    border-color: none
+    ;
+}
+
+
+
+/*telephone */
+#telephone {  
+
+    width: 320px;
+    padding: 10px;
+    font-size: px;
+    color: rgb(63, 65, 64);
+    outline: none;
+    background-color: rgb(163, 169, 194);
+    border-radius: 3px;
+    border-color: none
+}
+
+#Email {
+
+    width: 320px;
+    padding: 10px;
+    font-size: 12px;
+    outline: none;
+    background-color: rgb(163, 169, 194);
+    border-radius: 3px;
+    border-color: none
+    
+}
+
+#message{
+
+    width: 320px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(63, 65, 64);
+    outline: none;
+    background-color: rgb(163, 169, 194);
+    border-radius: 3px;
+    border-color: none
+    
+}
+
+textarea {
+    height: 180px;
+}
+
+
+
+.invalid {
+    border: 1px solid rgb(245, 115, 115);
+  }
+
+button {
+    margin-top: 10px;
+    font-size: 24px;
+    background: none;
+    border: 1px solid rgb(50, 35, 54);;
+    border-radius: 10px;
+    align-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: rgb(50, 35, 54);
+
+}
+
+button:hover {
+background-image: linear-gradient(
+    to right,
+    rgb(46, 34, 45) 0%,
+    rgb(86, 65, 90) 100%
+  );
+  color: white;
+  
+}
+
+  
