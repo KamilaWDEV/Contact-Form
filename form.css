@@ -1,6 +1,9 @@
 form {
-     padding: 100px;    
 
+    position: fixed;
+    top: 58%;
+    left: 58%;
+    transform: translate(-50%, -50%);
 }
 
 /* tytuł pola edycyjnego */
@@ -9,7 +12,6 @@ form {
     display: block;
     font-size: 17px;
     padding-bottom: 15px;
-
 
 }
 
@@ -28,14 +30,15 @@ form {
 .form input.field-error,
 .form textarea.field-error {
     border-color: rgb(247, 164, 149);
-   
+
     box-shadow: 0 0 0 2px rgba(204, 110, 93, 0.3);
 }
+
 .data-error-text {
     color: rgb(247, 164, 149);
     font-size: 0.8rem;
     margin-top: 5px;
- 
+
 }
 
 .hidden {
@@ -54,14 +57,13 @@ form {
     outline: none;
     background-color: rgb(163, 169, 194);
     border-radius: 3px;
-    border-color: none
-    ;
+    border-color: none;
 }
 
 
 
 /*telephone */
-#telephone {  
+#telephone {
 
     width: 320px;
     padding: 10px;
@@ -82,10 +84,9 @@ form {
     background-color: rgb(163, 169, 194);
     border-radius: 3px;
     border-color: none
-    
 }
 
-#message{
+#message {
 
     width: 320px;
     padding: 10px;
@@ -95,7 +96,6 @@ form {
     background-color: rgb(163, 169, 194);
     border-radius: 3px;
     border-color: none
-    
 }
 
 textarea {
@@ -106,13 +106,14 @@ textarea {
 
 .invalid {
     border: 1px solid rgb(245, 115, 115);
-  }
+}
 
 button {
     margin-top: 10px;
     font-size: 24px;
     background: none;
-    border: 1px solid rgb(50, 35, 54);;
+    border: 1px solid rgb(50, 35, 54);
+    ;
     border-radius: 10px;
     align-content: center;
     transition: all 0.5s;
@@ -122,13 +123,76 @@ button {
 }
 
 button:hover {
-background-image: linear-gradient(
-    to right,
-    rgb(46, 34, 45) 0%,
-    rgb(86, 65, 90) 100%
-  );
-  color: white;
-  
+    background-image: linear-gradient(to right,
+            rgb(46, 34, 45) 0%,
+            rgb(86, 65, 90) 100%);
+    color: white;
+
 }
 
+/* ========================MODAL=================================================== */
+
+.wrapperModal {
+
+    width: 800px;
+    height: fit-content;
+    background-color: #f2f2f5;
+    border: 1px solid darkgray;
+    position: relative;
+    margin-bottom: 50px;
+    left: 20%;
+    transform: translate(-49%, -150%) ;
   
+    /* zeby nodal przykjrywal wszytko */
+
+
+}
+
+.logoModal {
+    width: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.modal h1 {
+
+    text-align: center;
+    font-size: 30px;
+    color: rgb(68, 68, 68);
+    margin-top: -50px;
+    font-weight: bold;
+
+}
+
+.modal h2 {
+    text-align: center;
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+}
+
+.modal p {
+
+    text-align: center;
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+.close-button {
+
+    height: 60px;
+    width: 200px;
+    background-color: rgb(86, 86, 102);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 36%;
+
+}
+
+/* #overlay.active {
+    opacity:1;
+    pointer-events: all;
+} */
+ 

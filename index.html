@@ -14,48 +14,46 @@
     <form class="form" method="post" name="form" id="contactForm" action="./send-script.php">
         <div calss="form-group">
             <label for="name">Nom*</label>
-            <input 
-            type="text" 
-            name="name" 
-            id="name"
-            >
+            <input type="text" name="name" id="name">
             <div class="data-error-text hidden">Veuillez entrer un nome valide</div>
         </div>
         <div class="form-group">
             <label for="name">Prenome*</label>
-            <input 
-            type="text" 
-            name="prenome" 
-            id="prenome"
-            >
-             <div class="data-error-text hidden">Veuillez entrer un prénom valide</div>
+            <input type="text" name="prenome" id="prenome">
+            <div class="data-error-text hidden">Veuillez entrer un prénom valide</div>
         </div>
         <div class="form-group">
             <label for="name">Telephone</label>
-            <input  
-            type="text" 
-            name="telephone" 
-            id="telephone">
+            <input type="text" name="telephone" id="telephone">
             <div class="data-error-text hidden">Veuillez entrer un telephone valide</div>
 
         </div>
         <div class="form-group">
             <label for="name">Email*</label>
-            <input  
-            type="text" 
-            name="email" 
-             id="Email"
-             >
+            <input type="text" name="email" id="Email">
             <div class="data-error-text hidden">Veuillez entrer un email valide</div>
         </div>
         <div class="form-group">
             <label for="name">Message*</label>
-            <textarea  type="text" name="message" id="message" placeholder="tapez votre message" ></textarea>
+            <textarea type="text" name="message" id="message" placeholder="tapez votre message"></textarea>
             <div class="data-error-text hidden">Votre message est requis</div>
         </div>
 
 
         <button>envoyer</button>
+        <div class="wrapperModal" id="modal">
+            <div class="modal">
+                <img class="logoModal" src="./logo_dark.png" aly="logo kawiarni">
+                <h1> MERCI</h1>
+                <h2>Votre message a bien ete envoye!</h2>
+                <p>Nous essaierons d'y repondre au mieux dans les plus brefs delais. A bientot chez Mr.Coffee</p>
+
+            </div>
+
+            <button class="close-button">FERMER</button>
+        </div>
+<!-- <div id="overlay"></div>   -->
+<!-- pojawia sie ciemne tlo za modalem -->
 
     </form>
     <script src="form.js"></script>
