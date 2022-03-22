@@ -1,8 +1,8 @@
 form {
 
-    position: fixed;
-    top: 58%;
-    left: 58%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -108,14 +108,21 @@ textarea {
     border: 1px solid rgb(245, 115, 115);
 }
 
-button {
-    margin-top: 10px;
+
+.open-button {
+    margin-top: 320px;
+    position: fixed;
+    top: 60%;
+    left: 34%;
+
+}
+
+.open-button button {
+
     font-size: 24px;
-    background: none;
+    background-color: rgb(163, 169, 194);
     border: 1px solid rgb(50, 35, 54);
-    ;
     border-radius: 10px;
-    align-content: center;
     transition: all 0.5s;
     cursor: pointer;
     color: rgb(50, 35, 54);
@@ -132,27 +139,30 @@ button:hover {
 
 /* ========================MODAL=================================================== */
 
-.wrapperModal {
-
-    width: 800px;
+.modal {  
+width: 600px;
     height: fit-content;
+    border: 1px solid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0);
+    transition: 200ms ease-in-out;
     background-color: #f2f2f5;
-    border: 1px solid darkgray;
-    position: relative;
-    margin-bottom: 50px;
-    left: 20%;
-    transform: translate(-49%, -150%) ;
-  
-    /* zeby nodal przykjrywal wszytko */
+    z-index: 10;
+    border-radius: 5px;
+}
 
-
+.modal.active {
+    transform: translate(-50%, -50%)scale(1);
 }
 
 .logoModal {
     width: 50px;
-    padding-left: 50px;
+    padding-left: 30px;
     padding-top: 30px;
 }
+
 
 .modal h1 {
 
@@ -187,12 +197,42 @@ button:hover {
     border-radius: 10px;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 36%;
+    margin-left: 34%;
+
+} 
+button.close-button {
+    font-size: 20px;
+    color: rgb(50, 35, 54);
+
+    
+
+}
+.close-button:hover {
+    background-image: linear-gradient(to right,
+            rgb(46, 34, 45) 0%,
+            rgb(86, 65, 90) 100%);
+    color: white;
 
 }
 
-/* #overlay.active {
-    opacity:1;
+
+
+ #overlay {
+position: fixed;
+opacity: 0;
     pointer-events: all;
-} */
- 
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(25, 5, 32, 0.3);
+  pointer-events: none;
+  
+
+ }
+
+ #overlay.active {
+     opacity: 1;
+     pointer-events: all;
+ }
+

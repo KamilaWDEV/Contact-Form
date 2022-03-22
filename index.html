@@ -39,21 +39,27 @@
             <div class="data-error-text hidden">Votre message est requis</div>
         </div>
 
+<!--  -->
+        <div class="open-button">
+            <button type="submit" data-modal-target="#modal">envoyer</button>
+         </div>
+        </form>
 
-        <button>envoyer</button>
-        <div class="wrapperModal" id="modal">
-            <div class="modal">
-                <img class="logoModal" src="./logo_dark.png" aly="logo kawiarni">
+
+        <div class="modal" id="modal">
+            <div class="modalbody">
+                <img class="logoModal" src="./logo_dark.png" alt="logo kawiarni">
                 <h1> MERCI</h1>
                 <h2>Votre message a bien ete envoye!</h2>
-                <p>Nous essaierons d'y repondre au mieux dans les plus brefs delais. A bientot chez Mr.Coffee</p>
+                <p>Nous essaierons d'y repondre au mieux dans les plus brefs delais. <br>
+                    A bientot chez Mr.Coffee</p>
 
             </div>
 
-            <button class="close-button">FERMER</button>
+            <button data-close-button class="close-button">FERMER</button>
         </div>
-<!-- <div id="overlay"></div>   -->
-<!-- pojawia sie ciemne tlo za modalem -->
+      <div id="overlay"></div>   
+        <!-- pojawia sie ciemne tlo za modalem --> 
 
     </form>
     <script src="form.js"></script>
